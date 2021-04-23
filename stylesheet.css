@@ -48,7 +48,7 @@ table {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
     }
 
     /* General style */
@@ -59,6 +59,68 @@ table {
      
     }
 
+header{
+    background-color:#cc937e
+    border:1px solid grey;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:50%;
+    margin-right:0;
+    padding:2%;
+}
+
+header nav a{
+    font-size:30px;
+    font-family: 'Josefin Slab', serif; 
+    text-decoration: none;
+    color:#17184b;
+}
+nav a:hover{
+    color:#c97586;
+}
+
     img{
-        width:705px;
+        width:950px;
+        /* border:1px solid grey; */
+        margin-left:10%;
+       margin-right:5%;
+
+    }
+    .top{
+        display:flex;
+        /* border:1px solid grey; */
+    }
+    
+    .top-right{
+        /* border:1px solid grey; */
+        margin:10% 10% 10% 5%;
+        line-height:2;
+        font-family: 'Poiret One', cursive;
+    }
+
+    h1{
+        font-size:60px;
+    }
+
+    .top-right h2{
+        font-size: 50px;
+
+    }
+    .top-right p{
+        font-size: 30px;
+    }
+    
+    .about{
+        margin:0 auto;
+        border:1px solid grey;
+    }
+
+    h2{
+        /* border:1px solid grey; */
+        font-size:30px;
+        font-family: 'Josefin Slab', serif; 
+        
     }
