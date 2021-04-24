@@ -2,178 +2,352 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-*{
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-    max-width:100%;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* border:1px solid grey; */
+}
+
+/* General style */
+
+html {
+  font-size: 63.5%;
+  background-color: #fef4f4;
+  color: #bc6d4f;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border:1px solid grey; */
+}
+header img {
+  width: 100px;
+  margin-left: 13%;
+  /* border:1px solid grey; */
+}
+header nav {
+  margin-right: 10%;
+  /* border:1px solid grey; */
+}
+
+header nav a {
+  font-size: 30px;
+  font-family: "Josefin Slab", serif;
+  text-decoration: none;
+  color: #17184b;
+  padding: 40px;
+}
+
+nav a:hover {
+  color: #c97586;
+}
+
+img {
+  width: 800px;
+  /* border:1px solid grey; */
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  /* border:1px solid grey; */
+}
+
+.top-right {
+  /* border:1px solid grey; */
+  margin: 10% 10% 10% 5%;
+  line-height: 2;
+  font-family: "Poiret One", cursive;
+  color: #bc6d4f;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.top-right h2 {
+  font-size: 50px;
+}
+.top-right p {
+  font-size: 30px;
+}
+h2 {
+  /* border:1px solid grey; */
+  font-size: 40px;
+  font-family: "Josefin Slab", serif;
+}
+#about {
+  font-family: "Josefin Slab", serif;
+  margin: 5% 4%;
+  padding: 10%;
+  background-color: #d6c6af;
+  line-height: 2;
+  border: 1px solid grey;
+}
+
+#about p {
+  font-size: 20px;
+}
+
+#work {
+  font-family: "Josefin Slab", serif;
+  margin: 5% 4%;
+  padding: 10%;
+  background-color: #d6c6af;
+  line-height: 2;
+  border: 1px solid grey;
+}
+
+#work p {
+  font-size: 20px;
+}
+
+#blog {
+  font-family: "Josefin Slab", serif;
+  margin: 5% 4%;
+  padding: 10%;
+  background-color: #d6c6af;
+  line-height: 2;
+  border: 1px solid grey;
+}
+#blog p {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #d6c6af;
+  padding: 3%;
+  /* border:1px solid grey; */
+}
+
+.footer-text {
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+  line-height: 2;
+  /* border:1px solid grey; */
+}
+
+footer nav {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #17184b;
+}
+
+.dm {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  header img {
+    width: 100px;
+    margin-left: 8%;
+  }
+  header nav {
+    margin-right: 8%;
+  }
+
+  header nav a {
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  img {
+    width: 300px;
     /* border:1px solid grey; */
-    }
-
-    /* General style */
-
-    html{
-        font-size:63.5%;
-        background-color:#fef4f4;
-        color:#BC6D4F;
-        scroll-behavior: smooth;
-     
-    }
-
-header{
-    display:flex;
-    justify-content:space-between;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .top {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10% 0;
     /* border:1px solid grey; */
-    
-}
-header img{
-    width:100px;
-    margin-left:13%;
+  }
+
+  .top-right {
     /* border:1px solid grey; */
+    margin: 5% 10% 10% 5%;
+    line-height: 2;
+  }
 
-}
-header nav{  
-    display:flex;
-    justify-content:space-between;
-    margin-left:30%;
-    margin-right:20%;
+  h1 {
+    font-size: 30px;
+  }
+
+  .top-right h2 {
+    font-size: 30px;
+  }
+  .top-right p {
+    font-size: 15px;
+  }
+  h2 {
     /* border:1px solid grey; */
+    font-size: 25px;
+  }
+  #about {
+    margin: 20% 8%;
+    padding: 8%;
+    border: 1px solid grey;
+  }
+
+  #about p {
+    font-size: 15px;
+  }
+
+  #work {
+    margin: 20% 8%;
+    padding: 8%;
+    border: 1px solid grey;
+  }
+
+  #work p {
+    font-size: 15px;
+  }
+
+  #blog {
+    margin: 20% 8%;
+    padding: 8%;
+    border: 1px solid grey;
+  }
+  #blog p {
+    font-size: 15px;
+  }
+  
+  
+
 }
-
-header nav a{
-    font-size:40px;
-    font-family: 'Josefin Slab', serif; 
-    text-decoration: none;
-    color:#17184b;
-}
-
-nav a:hover{
-    color:#c97586;
-}
-
-    img{
-        width:800px;
-        /* border:1px solid grey; */
-        margin-left:10%;
-       margin-right:5%;
-
-    }
-    .top{
-        display:flex;
-        justify-content:space-evenly;
-        /* border:1px solid grey; */
-    }
-    
-    .top-right{
-        /* border:1px solid grey; */
-        margin:10% 10% 10% 5%;
-        line-height:2;
-        font-family: 'Poiret One', cursive;
-        color:#BC6D4F;
-    }
-
-    h1{
-        font-size:60px;
-    }
-
-    .top-right h2{
-        font-size: 50px;
-
-    }
-    .top-right p{
-        font-size: 30px;
-    }
-    h2{
-        /* border:1px solid grey; */
-        font-size:30px;
-        font-family: 'Josefin Slab', serif; 
-        
-    }
-    #about{
-        margin:5% 4%;
-        border:1px solid grey;
-    }
-
-    #work{
-        margin:5% 4%;
-    }
-
-    #blog{
-        margin:5% 4%;
-    }
-
-
-
-
-    footer{
-        background-color:#d6c6af;
-        padding:3%;
-        border:1px solid grey;
-        
-    }
-
-    .footer-text{
-        font-family: 'Josefin Slab', serif; 
-        
-        text-align: center;
-        line-height:2;
-        border:1px solid grey;
-    }
-
-footer nav{
-    font-size:25px;
-    display:flex;
-    justify-content:space-between;
-    margin-left:30%;
-    margin-right:30%;
-    
-}
-
-footer nav a{
-    text-decoration: none;
-}
-
-    
-
-    
