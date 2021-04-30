@@ -375,6 +375,7 @@ footer nav a {
     width: 70px;
     margin-left: 3%;
   }
+
   header nav {
     margin-right: 8%;
     /* border:1px solid grey; */
@@ -386,10 +387,18 @@ footer nav a {
     /* border:1px solid grey; */
   }
 
-   img { 
-    width: 0px;
-  }
   
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    /* border:1px solid grey; */
+  }
+  .top-left {
+    width: 200px;
+    border:1px solid grey;
+
+  }
 
   footer nav {
     font-size: 15px;
