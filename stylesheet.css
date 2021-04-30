@@ -168,18 +168,20 @@ header nav a {
 nav a:hover {
   color: #c97586;
 }
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 0;
+  /* border:1px solid grey; */
+}
 
-img {
+.top-left {
   width: 800px;
   /* border:1px solid grey; */
   margin-left: 10%;
   margin-right: 5%;
 }
-.top {
-  display: flex;
-  justify-content: space-evenly;
-  /* border:1px solid grey; */
-}
+
 
 .top-right {
   /* border:1px solid grey; */
@@ -316,7 +318,7 @@ footer nav a {
   .top-right {
     /* border:1px solid grey; */
     margin: 5% 10% 10% 5%;
-    line-height: 2;
+   
   }
 
   h1 {
@@ -390,13 +392,18 @@ footer nav a {
   
   .top {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items:center;
-    border:1px solid grey;
+    /* border:1px solid grey; */
+  }
+  .top-right {
+    /* border:1px solid grey; */
+    margin : 7% 0;
+    
   }
   .top-left {
     width: 200px;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 
   }
 
