@@ -176,7 +176,8 @@ nav a:hover {
 }
 
 .top-left {
-  width: 800px;
+  width:40vw;
+  height:40vw;
   /* border:1px solid grey; */
   margin-left: 10%;
   margin-right: 5%;
@@ -189,17 +190,19 @@ nav a:hover {
   line-height: 2;
   font-family: "Poiret One", cursive;
   color: #bc6d4f;
+
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 4vw;
+  
 }
 
 .top-right h2 {
-  font-size: 50px;
+  font-size: 3vw;
 }
 .top-right p {
-  font-size: 30px;
+  font-size: 2vw;
 }
 h2 {
   /* border:1px solid grey; */
