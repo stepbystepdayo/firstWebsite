@@ -189,7 +189,7 @@ nav a:hover {
   margin: 10% 10% 10% 5%;
   line-height: 2;
   font-family: "Poiret One", cursive;
-  color: #bc6d4f;
+  color: #3d1100;
 
 }
 
@@ -374,7 +374,7 @@ footer nav a {
 
 /* mobile Screen*/
 
-@media (max-width: 375px){
+@media (max-width: 400px){
 
   header img {
     width: 70px;
