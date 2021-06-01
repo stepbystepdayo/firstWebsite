@@ -306,7 +306,8 @@ footer nav a {
   }
 
   .top-left {
-    width: 300px;
+    width:50vw;
+    height:40vw
     /* border:1px solid grey; */
     margin-left: 10%;
     margin-right: 5%;
