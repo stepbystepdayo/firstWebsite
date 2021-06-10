@@ -407,8 +407,9 @@ footer nav a {
   }
   
   header img {
-    width: 70px;
+    width: 85px;
     margin-left: 3%;
+    margin-top:5%;
   }
 
   header nav a {
@@ -422,8 +423,8 @@ footer nav a {
     display: flex;
     flex-direction: column-reverse;
     align-items:center;
-    padding:5%;
-    border:1px solid grey;
+    /* padding:5%; */
+    /* border:1px solid grey; */
   }
   .top-right {
     /* border:1px solid grey; */
@@ -433,7 +434,7 @@ footer nav a {
   
   .top-left {
     width:50vw;
-    height:40vw;
+    height:45vw;
     /* border:1px solid grey; */
 
   }
