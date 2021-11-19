@@ -141,12 +141,8 @@ html {
     rgba(235, 210, 189, 0.82) 0%,
     rgba(235, 210, 189, 0.29) 100%
   );
-  font-family: Poppins;
+  font-family: "Roboto", sans-serif;
   /* border: 1px solid black; */
-}
-
-header {
-  /* border: 1px solid gray; */
 }
 
 nav {
@@ -161,9 +157,13 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 25px;
-  font-family: "pop";
   color: #6c5146;
+  font-family: "Roboto", sans-serif;
   /* border: 1px solid gray; */
+}
+
+nav a:hover {
+  color: #9f205a;
 }
 
 .main {
@@ -219,21 +219,21 @@ h2 {
 
 .vector {
   position: absolute;
-  width: 60rem;
-  height: 60rem;
-  border-radius: 69% 43% 63% 37% / 34% 66% 57% 31%;
-  margin-left: 3%;
-  margin-top: 4%;
+  width: 65rem;
+  height: 66rem;
+  border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
+  margin-left: 0%;
+  margin-top: 3.6%;
   background: linear-gradient(
     180deg,
     #9c7785 0%,
     rgba(164, 132, 144, 0.81) 100%
   );
   text-decoration: none;
-  animation: wave 30s ease-in-out infinite;
+  animation: wave 50s ease-in-out infinite;
 }
 
-@keyframes wave {
+/* @keyframes wave {
   0%,
   100% {
     border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
@@ -241,7 +241,7 @@ h2 {
   60% {
     border-radius: 25% 75% 50% 50% / 25% 50% 45% 50%;
   }
-}
+} */
 
 img {
   position: relative;
@@ -249,4 +249,81 @@ img {
   height: 69rem;
   /* border: 1px solid gray; */
   transform: rotate(2.27deg);
+}
+
+/* here is popup */
+
+.pop .overlay {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  width: 90vw;
+  height: 89vh;
+  background: rgba(213, 204, 204, 0.92);
+  z-index: 1;
+  display: none;
+}
+
+/* .pop .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+} */
+
+.pop .close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: #222;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.pop.active .overlay {
+  display: block;
+}
+
+.pop.active .container {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* This is line animation!!!!! */
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 200px;
+  stroke-dasharray: 50px;
+}
+#logo path:nth-child(2) {
+}
+#logo path:nth-child(3) {
+}
+#logo path:nth-child(4) {
+}
+#logo path:nth-child(5) {
+}
+#logo path:nth-child(6) {
+}
+#logo path:nth-child(7) {
 }

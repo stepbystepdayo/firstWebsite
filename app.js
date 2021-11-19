@@ -1,4 +1,4 @@
-const texts = [" a web developer", "a web designer", "dog lover"];
+const texts = [" a web developer", "a web designer", "a dog lover"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -18,3 +18,14 @@ let letter = "";
   }
   setTimeout(type, 400);
 })();
+
+function togglePop() {
+  document.getElementById("#about").classList.toggle("active");
+  // console.log("nice!");
+}
+
+const logo = documetnt.querySelectorAll("#logo path");
+
+for (let i = 0; i < logo.length; i++) {
+  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+}
