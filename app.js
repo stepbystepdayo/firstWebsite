@@ -1,4 +1,4 @@
-const texts = [" a web developer", "a web designer", "a dog lover"];
+const texts = [" a web developer", "a web designer", "dog lover"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -20,12 +20,20 @@ let letter = "";
 })();
 
 function togglePop() {
-  document.getElementById("#about").classList.toggle("active");
+  document.getElementById("about").classList.toggle("active");
   // console.log("nice!");
 }
+function togglePortfolio() {
+  document.getElementById("portfolio").classList.toggle("active");
+  // console.log("nice portfolio!");
+}
 
-const logo = documetnt.querySelectorAll("#logo path");
+function toggleBlog() {
+  document.getElementById("blog").classList.toggle("active");
+  // console.log("nice portfolio!");
+}
 
-for (let i = 0; i < logo.length; i++) {
-  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+function toggleResume() {
+  document.getElementById("resume").classList.toggle("active");
+  // console.log("nice portfolio!");
 }
