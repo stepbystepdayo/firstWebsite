@@ -1,4 +1,4 @@
-const texts = [" a web developer", "a web designer", "a dog lover"];
+const texts = [" a web developer", "a web designer", "dog lover"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -20,12 +20,29 @@ let letter = "";
 })();
 
 function togglePop() {
-  document.getElementById("#about").classList.toggle("active");
+  document.getElementById("about").classList.toggle("active");
   // console.log("nice!");
 }
-
-const logo = documetnt.querySelectorAll("#logo path");
-
-for (let i = 0; i < logo.length; i++) {
-  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+function togglePortfolio() {
+  document.getElementById("portfolio").classList.toggle("active");
+  // console.log("nice portfolio!");
 }
+
+function toggleBlog() {
+  document.getElementById("blog").classList.toggle("active");
+  // console.log("nice portfolio!");
+}
+
+function toggleResume() {
+  document.getElementById("resume").classList.toggle("active");
+  // console.log("nice portfolio!");
+}
+
+// Cloudinary getData
+
+const CLOUDINARY_URL =
+  "cloudinary://346759573569934:DP7cV_ZrAZjM4s5248dQYxcK5gA@dtari8knz";
+
+
+const fitness = document.getElementsByClassName("fitness");
+const recipe = document.getElementsByClassName("recipe");

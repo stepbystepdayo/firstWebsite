@@ -1,5 +1,3 @@
 # firstWebsite
-My new website.
- Updated with the original code from my local repo.
 
- yayyyy I marged to master!
+This is my portfolio.
