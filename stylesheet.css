@@ -136,11 +136,7 @@ table {
 
 html {
   font-size: 63.5%;
-  background: radial-gradient(
-    55.21% 174.49% at 71.2% 52.82%,
-    rgba(235, 210, 189, 0.82) 0%,
-    rgba(235, 210, 189, 0.29) 100%
-  );
+  background-color: rgba(235, 210, 189, 0.82);
   font-family: "Roboto", sans-serif;
   /* border: 1px solid black; */
 }
@@ -222,18 +218,14 @@ h2 {
   width: 65rem;
   height: 66rem;
   border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
-  margin-left: 0%;
-  margin-top: 3.6%;
-  background: linear-gradient(
-    180deg,
-    #9c7785 0%,
-    rgba(164, 132, 144, 0.81) 100%
-  );
+  margin-left: -2%;
+  margin-top: 3%;
+  background: #db9d87;
   text-decoration: none;
   animation: wave 50s ease-in-out infinite;
 }
 
-/* @keyframes wave {
+@keyframes wave {
   0%,
   100% {
     border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
@@ -241,12 +233,41 @@ h2 {
   60% {
     border-radius: 25% 75% 50% 50% / 25% 50% 45% 50%;
   }
-} */
+}
+.vector-two {
+  position: absolute;
+  z-index: -2;
+  width: 34vw;
+  height: 33vw;
+  border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
+  margin-left: -9%;
+  margin-top: 8%;
+  background: linear-gradient(
+    180deg,
+    #9c7785 0%,
+    rgba(164, 132, 144, 0.81) 100%
+  );
+  text-decoration: none;
+}
+
+.vector-three {
+  position: absolute;
+  z-index: -1;
+  width: 34vw;
+  height: 33vw;
+  border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
+  margin-left: 3%;
+  margin-top: 12%;
+  background: #7a8888;
+  text-decoration: none;
+}
 
 img {
   position: relative;
-  width: 73rem;
-  height: 69rem;
+  width: 63rem;
+  height: 59rem;
+  margin-top: 11%;
+  margin-left: 0%;
   /* border: 1px solid gray; */
   transform: rotate(2.27deg);
 }
@@ -336,6 +357,7 @@ img {
 }
 .fitness {
   transition: transform 250ms;
+  margin-right: 5%;
 }
 
 .fitness:hover {
@@ -365,14 +387,355 @@ img {
 1200px */
 
 /* 320px */
-@media (max-width: 320px) {
-}
 
-@media (max-width: 414px) {
+/* @media (max-width: 1920px) {
   nav {
-    margin: 10% 400%;
+    margin-left: 50%;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+  nav a {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .text {
+    border: 2px solid black;
+    width: 100%;
+  }
+  .intro {
+    font-size: 50px;
   }
 
+  .vector {
+    width: 59vw;
+    height: 60vw;
+    margin-top: 10%;
+    margin-left: 43%;
+    border: 2px solid black;
+  }
+  img {
+    border: 2px solid black;
+    width: 93vw;
+    height: 59vw;
+    margin-right: 0%;
+    margin-top: 0ss%;
+  }
+
+  here is popup
+  .overlay h2 {
+    font-size: 60px;
+  }
+  .overlay p {
+    font-size: 30px;
+  }
+  .videos {
+    border: 2px solid black;
+    margin: 5% 10%;
+  }
+  .fitness {
+    margin-right: 5%;
+  }
+} */
+
+@media (max-width: 1500px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  .text {
+    /* border: 1px solid gray; */
+    margin-left: 8%;
+  }
+  .vector {
+    width: 55rem;
+    height: 56rem;
+    margin-right: 60%;
+    margin-top: 3%;
+  }
+  .vector-two {
+    margin-top: 14%;
+    margin-left: -6;
+  }
+  .vector-three {
+    margin-left: 13%;
+    margin-top: 14%;
+  }
+  img {
+    margin-right: 0%;
+    /* border: 1px solid gray; */
+  }
+}
+
+@media (max-width: 1280px) {
+  nav {
+    margin-left: 40%;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+  nav a {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .text {
+    /* border: 2px solid black; */
+    width: 50%;
+    /* margin-top: 20%; */
+  }
+  .intro {
+    font-size: 30px;
+  }
+
+  .vector {
+    width: 37vw;
+    height: 36vw;
+    margin-top: 4%;
+    margin-left: 3%;
+  }
+  .vector-two {
+    width: 34vw;
+    height: 33vw;
+    margin-top: 13%;
+  }
+
+  .vector-three {
+    width: 34vw;
+    height: 33vw;
+    margin-left: 12%;
+    margin-top: 15%;
+  }
+  img {
+    width: 53vw;
+    height: 40vw;
+    margin-left: -5%;
+    margin-top: 15%;
+  }
+
+  /* here is popup */
+  .overlay h2 {
+    font-size: 55px;
+  }
+  .overlay p {
+    font-size: 25px;
+  }
+  .videos {
+    /* border: 2px solid black; */
+    margin: 5% 10%;
+  }
+  .fitness {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 980px) {
+  nav {
+    margin-left: 30%;
+  }
+  nav a {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .intro {
+    font-size: 25px;
+  }
+  .vector {
+    width: 37vw;
+    height: 36vw;
+    margin-top: 4%;
+    margin-left: 3%;
+  }
+  .vector-two {
+    margin-top: 19%;
+    margin-left: -18;
+    margin-top: 15%;
+  }
+  .vector-three {
+    margin-left: 13.5%;
+    margin-top: 15%;
+  }
+  .overlay h2 {
+    font-size: 45px;
+  }
+  .overlay p {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 869px) {
+  nav {
+    margin-left: 30%;
+  }
+  nav a {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  .overlay h2 {
+    font-size: 40px;
+  }
+  .overlay p {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* ここから縦になる */
+@media (max-width: 750px) {
+  nav {
+    margin-left: 10%;
+  }
+  nav a {
+    font-size: 24px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text {
+    /* border: 1px solid gray; */
+    margin-bottom: 5%;
+  }
+  .picture {
+    /* border: 2px solid black; */
+    margin: 3% 30%;
+  }
+
+  .vector {
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .vector-two {
+    width: 34vw;
+    height: 33vw;
+    margin-top: 14%;
+  }
+
+  .vector-three {
+    width: 34vw;
+    height: 33vw;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+  img {
+    margin-left: 12%;
+    margin-top: 5.5%;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .intro {
+    font-size: 17px;
+  }
+  .overlay h2 {
+    font-size: 35px;
+  }
+  .overlay p {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .videos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .fitness {
+    margin-right: 8%;
+  }
+  .recipe {
+    margin-right: 8%;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 527px) {
+  nav {
+    margin: 3% 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 15px;
+    margin-top: 5%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  .vector {
+    width: 38vw;
+    height: 37vw;
+    margin-top: 0%;
+    margin-left: 3%;
+  }
+  .vector-two {
+    margin-top: 14%;
+    margin-left: -10%;
+  }
+  .vector-three {
+    margin-top: 14%;
+    margin-left: 20%;
+  }
+  img {
+    /* border: 2px solid black; */
+    margin-right: 9%;
+    margin-top: 0%;
+  }
+
+  .overlay h2 {
+    font-size: 30px;
+  }
+  .overlay p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 468px) {
+  nav a {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .intro {
+    font-size: 10px;
+  }
   .overlay h2 {
     margin-top: 20%;
     font-size: 40px;
@@ -398,311 +761,24 @@ img {
     height: 65vw;
   }
 }
-
-@media (max-width: 1920px) {
-  nav {
-    margin-left: 50%;
-    margin-right: 5%;
-    margin-top: 3%;
-  }
+@media (max-width: 320px) {
   nav a {
-    font-size: 30px;
+    font-size: 10px;
   }
   h1 {
-    font-size: 70px;
-  }
-  h2 {
-    font-size: 60px;
-  }
-  .text {
-    /* border: 2px solid black; */
-    width: 100%;
-  }
-  .intro {
-    font-size: 50px;
-  }
-
-  .vector {
-    width: 39vw;
-    height: 40vw;
-    margin-top: 5%;
-    margin-left: 43%;
-    /* border: 2px solid black; */
-  }
-  img {
-    width: 63vw;
-    height: 39vw;
-    margin-right: 6%;
-    margin-top: 3%;
-  }
-
-  /* here is popup */
-  .overlay h2 {
-    font-size: 60px;
-  }
-  .overlay p {
-    font-size: 30px;
-  }
-  .videos {
-    /* border: 2px solid black; */
-    margin: 5% 10%;
-  }
-  .fitness {
-    margin-right: 5%;
-  }
-}
-
-@media (max-width: 1500px) {
-  .text {
-    /* border: 2px solid black; */
-    width: 100%;
-    margin-top: 19%;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 50px;
-  }
-  .vector {
-    margin-top: 10%;
-    /* border: 2px solid black; */
-  }
-  img {
-    margin-top: 9%;
-  }
-}
-
-@media (max-width: 1280px) {
-  nav {
-    margin-left: 40%;
-    margin-right: 5%;
-    margin-top: 3%;
-  }
-  nav a {
-    font-size: 30px;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .text {
-    /* border: 2px solid black; */
-    width: 100%;
-    margin-top: 20%;
-  }
-  .intro {
-    font-size: 30px;
-  }
-
-  .vector {
-    width: 40vw;
-    height: 39vw;
-    margin-top: 10%;
-    margin-left: 40%;
-    /* border: 2px solid black; */
-  }
-
-  img {
-    width: 63vw;
-    height: 39vw;
-    margin-right: 9%;
-    margin-top: 9%;
-  }
-
-  /* here is popup */
-  .overlay h2 {
-    font-size: 55px;
-  }
-  .overlay p {
-    font-size: 25px;
-  }
-  .videos {
-    /* border: 2px solid black; */
-    margin: 5% 10%;
-  }
-  .fitness {
-    margin-right: 5%;
-  }
-}
-
-@media (max-width: 900px) {
-  nav {
-    margin-left: 30%;
-  }
-  nav a {
-    font-size: 28px;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .intro {
-    font-size: 25px;
-  }
-  .overlay h2 {
-    font-size: 45px;
-  }
-  .overlay p {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* * {
-    border: 2px solid black;
-  } */
-  nav {
-    margin: 3% 20%;
-    margin-top: 5%;
-  }
-  nav a {
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-  .text {
-    /* border: 2px solid black; */
-    width: 100%;
-    margin-top: 20%;
-  }
-  .intro {
-    font-size: 25px;
-  }
-
-  .vector {
-    position: absolute;
-    width: 40vw;
-    height: 39vw;
-    margin-top: 10%;
-    margin-left: 40%;
-    /* border: 2px solid black; */
-  }
-
-  img {
-    width: 40vw;
-    height: 38vw;
-    margin-right: 9%;
-    margin-top: 9%;
-  }
-  /* here is popup */
-  .overlay h2 {
-    font-size: 35px;
-  }
-  .overlay p {
-    font-size: 20px;
-  }
-  .videos {
-    /* border: 2px solid black; */
-    margin: 5% 10%;
-  }
-  .fitness {
-    margin-right: 5%;
-  }
-}
-
-@media (max-width: 665px) {
-  h1 {
-    font-size: 25px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  .vector {
-    width: 38vw;
-    height: 37vw;
-    margin-top: 10%;
-    margin-left: 45%;
-    /* border: 2px solid black; */
-  }
-  img {
-    width: 39vw;
-    height: 35vw;
-    margin-right: 9%;
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 527px) {
-  html {
-    background-color: rgba(235, 210, 189, 0.82);
-  }
-  nav {
-    margin: 3% 10%;
-    margin-top: 10%;
-  }
-  nav a {
     font-size: 15px;
   }
-  h1 {
-    font-size: 25px;
-  }
   h2 {
-    font-size: 70px;
-  }
-  .text {
-    border: 2px solid black;
-    width: 100%;
-    margin-top: 20%;
-    margin-left: 20%;
+    font-size: 14px;
   }
   .intro {
+    font-size: 13px;
+  }
+  .overlay h2 {
+    margin-top: 20%;
     font-size: 20px;
   }
-  .vector {
-    z-index: -1;
-    width: 35vw;
-    height: 34vw;
-    margin-top: 12%;
-    margin-left: 40%;
-    border: 2px solid black;
-    background: #db9d87;
-    animation: wave 50s ease-in-out infinite;
-  }
-  @keyframes wave {
-    0%,
-    100% {
-      border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
-    }
-    60% {
-      border-radius: 25% 75% 50% 50% / 25% 50% 45% 50%;
-    }
-  }
-
-  img {
-    display: none;
-  }
-
-  here is popup .overlay h2 {
-    font-size: 30px;
-  }
   .overlay p {
-    font-size: 15px;
-  }
-  .videos {
-    border: 2px solid black;
-    margin-top: 0%;
-    flex-direction: column;
-    height: 80%;
-  }
-  #fitness {
-    border: 2px solid black;
-    margin-top: 0%;
-    width: 10vw;
-    height: 10vw;
-  }
-  #recipe {
-    width: 100px;
-    height: 100px;
-    transform: rotate(0deg);
+    font-size: 10px;
   }
 }
