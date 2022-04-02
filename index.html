@@ -18,7 +18,7 @@
     <nav>
       <a href="#about" onclick="togglePop()">ABOUT</a>
       <a href="#portfolio" onclick="togglePortfolio()">portfolio</a>
-      <a href="#blog" onclick="toggleBlog()">blog</a>
+      <!-- <a href="#blog" onclick="toggleBlog()">blog</a> -->
       <a href="#resume" onclick="toggleResume()">resume</a>
     </nav>
   </header>
@@ -52,8 +52,12 @@
     <h2>ABOUT ME</h2>
     <p>
       I am Full-Stack Developer located in the US.
-      <br>I have a serious passion for Python, Javascript, React/Redux,
-      UI effects!
+      <br>Software developer transitioning from administration work to fullstack developer. Have experience working in Agile
+      environment, with continuous integration and continuous development workflow.
+      
+      <br>Experienced in React and Node.js frameworks with Javascript, and query builder/database tools such as Knex and Postgres.
+      Have worked with Docker and Heroku for local and online deployments, and have experience with design tools, such as
+      Figma and DBdiagram/DBdesigner.
     </p></div> 
   </section>
 
@@ -80,7 +84,7 @@
       </div>
     </section>
 
-    <section class="pop" id="blog">
+    <!-- <section class="pop" id="blog">
       <div class="overlay">
         <div class="close" id="close" onClick="toggleBlog()">&times;</div>
         <h2>This is my Blog</h2>
@@ -88,22 +92,20 @@
           This is my blog
         </p>
       </div>
-    </section>
+    </section> -->
 
     <section class="pop" id="resume">
       <div class="overlay">
         <div class="close" id="close" onClick="toggleResume()">&times;</div>
-        <h2>This is my resume</h2>
-        <p>
-          This is my resume
-        </p>
+        <h2>Resume</h2>
+        <embed class="resumeDoc" src="https://docs.google.com/document/d/1UtTjK6oq7mNqDG_TE0FZk0CZFlGP2dsdYuoMXj7M1RQ/edit?usp=sharing"/>
+        
       </div>
     </section>
 
 
 
-  
-  
+
   <script src="app.js"></script>
 </div>
 </body>
