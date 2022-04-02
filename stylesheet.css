@@ -216,13 +216,13 @@ h2 {
 .vector {
   position: absolute;
   width: 65rem;
-  height: 66rem;
-  border-radius: 66% 34% 37% 63% /57% 31% 69% 43%;
-  margin-left: -2%;
-  margin-top: 3%;
+  height: 60rem;
+  border-radius: 40% 55% 50% 50% / 40% 50% 45% 50%;
+  margin-left: 0%;
+  margin-top: 0%;
   background: #db9d87;
   text-decoration: none;
-  animation: wave 50s ease-in-out infinite;
+  /* animation: wave 50s ease-in-out infinite; */
 }
 
 @keyframes wave {
